@@ -12,12 +12,15 @@ body {
 main {
     width: 80vh;
     margin: 20px auto;
+}
+
+#csempek {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
 
-div {
+#csempek div {
     background: linear-gradient(45deg, #4f4f4f, #1f1f1f);
     border-radius: 10px;
     padding: 10px;
@@ -26,6 +29,74 @@ div {
     transition: 0.5s;
 }
 
-div:hover {
+#csempek div:hover {
     scale: 1.1;
+}
+
+#tabla {
+    margin: 10px;
+}
+
+
+table {
+    margin: auto;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+/* tr {
+    animation: asd 3s infinite;
+} */
+
+td, th {
+    background: linear-gradient(45deg, #4f4f4f, #1f1f1f);
+    padding: 10px;
+    color: beige;
+    transition: 0.5s;
+    /* border: 2px solid #1f1f1f;
+    animation: valamiAnimacio 2s infinite; */
+}
+
+td:hover, th:hover {
+    scale: 1.1;
+}
+
+@keyframes valamiAnimacio {
+    0% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 0%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+
+@keyframes asd {
+    0% {
+        rotate: 0;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+
+
+#addSor {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 150px);
+    width: 300px;
+    background-color: #1f1f1f;
+    color: beige;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#addSor * {
+    margin: 10px;
 }
