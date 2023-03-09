@@ -176,7 +176,7 @@ function addSorInit() {
         htmlKod += `<label for="${key}">${key}</label>
                  <input type="text", name="${key}"/>`;
     }
-    htmlKod += `<button onClick="addElem();">Hozzáadás</button></form>`
+    htmlKod += `<input type="button" onClick="addElem();">Hozzáadás</button></form>` //<button onClick="addElem();">Hozzáadás</button></form>
     addWindow.innerHTML += htmlKod;
 }
 
