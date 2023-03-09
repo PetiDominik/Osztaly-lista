@@ -148,6 +148,7 @@ function addNewElemStart() {
 }
 
 function addElem() {
+    event.preventDefault();
     let addWindow = document.getElementById("addSor");
     let childs = addWindow.querySelectorAll("input");
     console.log(childs);
